@@ -1,22 +1,17 @@
 {
-"verson":2,
-"build": [
-    {
-        "src": "ssrc/main.ts",
-        "use": "@vercel.node"
-    }
-],
-"routes": [
-
-    {
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/main.ts",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
         "src": "/(.*)",
         "dest": "src/main.ts",
-        "methods": [
-            "GET",
-            "POST",
-            "PUT",
-            "DELETE"
-        ]
-    }
-]
-}
+        "methods": ["GET", "POST", "PUT", "DELETE"]
+      }
+    ]
+  }
+  
