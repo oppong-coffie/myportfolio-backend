@@ -15,7 +15,5 @@ export class SmsController {
   async sendSms(@Body() body: { name: string; phone: string }) {
     const { name, phone } = body;
     return await this.smsService.sendSms(name, phone);
-    return await this.smsService.sendMe(name, phone);
-
   }
 }
